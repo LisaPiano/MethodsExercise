@@ -6,6 +6,11 @@ namespace MethodsExercise
     {
 
         //-----------EXERCISE 2----Writing Methods for Math Operators_______
+
+        public static bool SendEmail() {
+            bool result = 2 == 0;
+            return result;
+        }
         public static int Add(params int[] ListNumbers)
         {
             int total = 0;
@@ -35,7 +40,7 @@ namespace MethodsExercise
 
         public static int Divide(int num1, int num2)
         {
-            return num1 * num2;
+            return num1/num2;
         }
 
         public static int Modulus(int num1, int num2)
@@ -48,6 +53,10 @@ namespace MethodsExercise
         static void Main(string[] args)
         {
 
+
+            bool answer = SendEmail();
+            Console.WriteLine(answer);
+
             int addAnswer = Add(3, 5, 10, 20, 3);
             Console.WriteLine(addAnswer);
 
@@ -57,7 +66,7 @@ namespace MethodsExercise
             int multiplyAnswer = Multiply(3, 5);
             Console.WriteLine(multiplyAnswer);
 
-            int divideAnswer = Divide(3, 5);
+            int divideAnswer = Divide(8, 3);
             Console.WriteLine(divideAnswer);
 
             Console.WriteLine("Ok...so now, why don't you give me a number for the next operation? Enter here:");
