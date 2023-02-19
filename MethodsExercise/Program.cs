@@ -1,9 +1,71 @@
-﻿namespace MethodsExercise
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace MethodsExercise
 {
     public class Program
     {
+
+        //-----------EXERCISE 2----Writing Methods for Math Operators_______
+        public static int Add(int num1, int num2)
+        {
+            return num1 + num2;
+        }
+
+        public static int Subtract(int num1, int num2)
+        {
+            if (num1 > num2)
+            {
+                return num1 - num2;
+            }
+            else
+            {
+                return num2 - num2;
+            }
+        }
+
+        public static int Multiply(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+
+        public static int Divide(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+
+        public static int Modulus(int num1, int num2)
+        {
+            return num1 % num2;
+        }
+
+
+
         static void Main(string[] args)
         {
+
+            int addAnswer = Add(3, 5);
+            Console.WriteLine(addAnswer);
+
+            int subtractAnswer = Subtract(3, 5);
+            Console.WriteLine(subtractAnswer);
+
+            int multiplyAnswer = Multiply(3, 5);
+            Console.WriteLine(multiplyAnswer);
+
+            int divideAnswer = Divide(3, 5);
+            Console.WriteLine(divideAnswer);
+
+            int modulusAnswer = Modulus(3, 5);
+            Console.WriteLine(modulusAnswer);
+
+
+
+
+
+            //-----------EXERCISE 1_______
+            //----Designing a madlibs type exercise to practicing inputing and outputing variables
+
+
             Console.WriteLine("Hello, World!");
             Console.WriteLine("Hi there! What is your name?");
             string userName = Console.ReadLine();
@@ -23,6 +85,9 @@
 
 
 
-        }
-    }
-}
+
+
+
+        }//end main
+    } //end program
+}//end namespace
