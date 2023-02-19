@@ -60,8 +60,15 @@ namespace MethodsExercise
             int divideAnswer = Divide(3, 5);
             Console.WriteLine(divideAnswer);
 
-            int modulusAnswer = Modulus(3, 5);
-            Console.WriteLine(modulusAnswer);
+            Console.WriteLine("Ok...so now, why don't you give me a number for the next operation? Enter here:");
+            int num1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Thanks...so now, please give me a second number. Enter here:");
+            int num2 = int.Parse(Console.ReadLine());
+
+            int modulusAnswer = Modulus(num1, num2);
+            Console.WriteLine($"And, the final answer is....{modulusAnswer}!");
+
 
 
 
@@ -70,8 +77,8 @@ namespace MethodsExercise
             //-----------EXERCISE 1_______
             //----Designing a madlibs type exercise to practicing inputing and outputing variables
 
-            
-            Console.WriteLine("And now, please give me some information, and I will tell you a story!");
+
+            Console.WriteLine("Now, please give me some information, and I will tell you a story!");
             Console.WriteLine("What is your name?");
             string userName = Console.ReadLine();
             Console.WriteLine("So, what is your favorite color?");
@@ -82,7 +89,6 @@ namespace MethodsExercise
             string userBand = Console.ReadLine();
 
             Console.WriteLine($"Wonderful! I have a little story to tell you, {userName}. Once upon a time, {userName} was walking through a {userColor} forest. Unfortunately, {userName} was not being very careful, so {userName} accidentally tripped over a giant {userAnimal} who was not in a very good mood, and also the {userAnimal} was hungry. So, sadly, the {userAnimal} ate {userName} immediately. The end. Oh no...you didn't like my story? Well, sorry about that. Why don't you go ahead and listen to {userBand}, because that will surely cheer you up! :)");
-
 
 
 
