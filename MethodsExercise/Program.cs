@@ -6,9 +6,14 @@ namespace MethodsExercise
     {
 
         //-----------EXERCISE 2----Writing Methods for Math Operators_______
-        public static int Add(int num1, int num2)
+        public static int Add(params int[] ListNumbers)
         {
-            return num1 + num2;
+            int total = 0;
+            foreach (int number in ListNumbers)
+            {
+                total += number;
+            }
+            return total;
         }
 
         public static int Subtract(int num1, int num2)
@@ -43,7 +48,7 @@ namespace MethodsExercise
         static void Main(string[] args)
         {
 
-            int addAnswer = Add(3, 5);
+            int addAnswer = Add(3, 5, 10, 20, 3);
             Console.WriteLine(addAnswer);
 
             int subtractAnswer = Subtract(3, 5);
@@ -65,9 +70,9 @@ namespace MethodsExercise
             //-----------EXERCISE 1_______
             //----Designing a madlibs type exercise to practicing inputing and outputing variables
 
-
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("Hi there! What is your name?");
+            
+            Console.WriteLine("And now, please give me some information, and I will tell you a story!");
+            Console.WriteLine("What is your name?");
             string userName = Console.ReadLine();
             Console.WriteLine("So, what is your favorite color?");
             string userColor = Console.ReadLine();
